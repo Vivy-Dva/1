@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #3a1c45, #5a345e);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .login-box {
+            width: 420px;
+            background: #f2f2f2;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        .login-header {
+            background: #6b486b;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .login-header h2 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .login-body {
+            padding: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 45px 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            background: #eee;
+        }
+
+        .input-group i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .login-footer {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .sign-in-btn {
+            background: #6b486b;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            color: #999;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .copyright {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #fff;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <div class="login-header">
+            <h2>Login Form</h2>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="login-body">
+            <div class="input-group">
+                <input type="text" placeholder="Username">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="login-footer">
+                <button class="sign-in-btn">Sign in</button>
+                <a href="#" class="forgot-password">Lost your Password ?</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright &copy; 2014.</div>
+</body>
+</html>
